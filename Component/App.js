@@ -1,7 +1,12 @@
 import React from "react";
+import DefaultBn from "./DefaultBtn";
 
 function App() {
-  console.log('works');
+  return (
+    <div>
+      <DefaultBn />
+    </div>
+  )
 }
 
 export default App;
