@@ -1,0 +1,19 @@
+{
+  "name": "react-button",
+  "version": "1.0.0",
+  "description": "![assets/Screenshot_2020-10-08_at_11.22.44.png](assets/Screenshot_2020-10-08_at_11.22.44.png)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "npm install react react-dom"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
