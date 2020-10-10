@@ -1,17 +1,8 @@
-.default,
-.disabled,
-.DisabledShadow,
-.startIcon,
-.variantOutline,
-.variantText,
-.defaultColor,
-.primary,
-.secondary,
-.danger
-.sm,
-.disabledShadow,
-.md,
-.lg {
+header {
+  text-align: center;
+}
+
+button {
   font-family: Noto Sans JP;
   font-style: normal;
   font-weight: 500;
@@ -23,75 +14,47 @@
   padding-block-end: 8px;
   padding-inline-start: 16px;
   padding-inline-end: 16px;
-  background: #AEAEAE;
+  background: #E0E0E0;
   border-radius: 6px;
   border-color: transparent;
-}
-
-.default {
   box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
 }
 
-.variantOutline {
+button:hover {
+  background: #AEAEAE;
+}
+
+.outline {
   color: #3D5AFE;
   background-color: white;
   border: 1px solid #3D5AFE;
 }
 
-.variantText {
+.outline:hover {
+  background: rgba(41, 98, 255, 0.1);
+  border: 1px solid #3D5AFE;
+}
+
+.text {
   border-color: transparent;
   background-color: transparent;
   color: #3D5AFE;
 }
 
-.disabledShadow,
-.startIcon,
-.sm,
-.md,
-.lg,
-.primary {
-  background: #3D5AFE;
+.text:hover {
+  background: rgba(41, 98, 255, 0.1);
 }
 
-.disabledShadow {
-  color: white;
-  box-shadow: unset;
+.none {
+  box-shadow: none;
 }
 
-.disabled {
-  color: #9E9E9E;;
-  background: #E0E0E0;
+.yes {
+  color: #9E9E9E;
 }
 
-.startIcon {
-  color: #FFFFFF;
-  padding-inline-start: calc(32px + 16px);
-}
-
-.startIcon::before {
-  content: '';
-  display: block;
-  background-image: url('./add_shopping.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 28px;
-  height: 28px;
-  position: relative;
-  top: -1.5rem;
-  left: -41px;
-}
-
-.endIcon::after {
-  content: '';
-  display: block;
-  background-image: url('./add_shopping.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 28px;
-  height: 28px;
-  position: relative;
-  top: -1.5rem;
-  right: -21px;
+.yes:hover {
+  background-color: transparent;
 }
 
 .sm {
@@ -115,13 +78,18 @@
   padding-inline-end: 22px;
 }
 
-.defaultColor {
+.color {
   background: #E0E0E0;
   color: #3F3F3F;
 }
 
 .primary {
   color: #E0E0E0;
+  background-color: #2962FF;
+}
+
+.primary:hover {
+  background: #0039CB;
 }
 
 .secondary {
@@ -129,18 +97,34 @@
   background: #455A64;
 }
 
+.secondary:hover {
+  background: #1C313A;
+}
+
 .danger {
   color: #E0E0E0;
   background: #D32F2F;
 }
 
-.wrapper {
-  margin-block-end: 1rem;
+.danger:hover {
+  background: #9A0007
 }
 
 .container {
+  margin-block-end: 55px;
+}
+
+.wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (min-width: 800px) {
+  #root{
+    max-width: 800px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
 }
 
