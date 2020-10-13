@@ -12,7 +12,7 @@ function App() {
       </div>
       <div className="container">
         <p>{`<button variant="outline" />`}</p>
-        <DefaultBn variant="outline" disabledShadow>
+        <DefaultBn variant="outline" disabledShadow="none">
           Default
         </DefaultBn>
       </div>
@@ -30,7 +30,13 @@ function App() {
       </div>
       <div className="container">
         <p>{`<button disabled />`}</p>
-        <DefaultBn disabled="yes" disabledShadow="none">
+        <DefaultBn disabled disabledShadow="none">
+          Desabled
+        </DefaultBn>
+      </div>
+      <div className="container">
+        <p>{`<button disabled variant="text" />`}</p>
+        <DefaultBn  variant="text" disabled="yes" disabledShadow="none">
           Desabled
         </DefaultBn>
       </div>
